@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fine Line Drywall | Petawawa</title>
-    <!-- Tailwind CSS -->
+    <title>Fine Line Drywall | Petawawa & Ottawa Valley</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -12,168 +12,178 @@
             theme: {
                 extend: {
                     colors: {
-                        darkBg: '#090d16',
-                        cardBg: '#111827',
-                        accent: '#eab308'
+                        brand: {
+                            dark: '#0f172a',
+                            card: '#1e293b',
+                            accent: '#f59e0b', // Professional amber
+                            accentHover: '#d97706'
+                        }
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-darkBg text-slate-100 font-sans antialiased pb-28">
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-slate-900 pb-24 md:pb-0">
 
-    <!-- Header Banner -->
-    <div class="bg-gradient-to-r from-yellow-600 to-amber-500 text-slate-950 font-bold text-xs text-center py-2 px-4 shadow-md">
-        <i class="fa-solid fa-star mr-1"></i> Petawawa & Ottawa Valley's Premier Drywall Experts
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-accent text-slate-950 font-semibold text-xs sm:text-sm text-center py-2 px-4">
+        <i class="fa-solid fa-fire mr-1.5"></i> Petawawa's Trusted Drywall & Taping Experts • Free Estimates!
     </div>
 
-    <!-- Main Mobile Hub Container -->
-    <div class="max-w-md mx-auto min-h-screen bg-darkBg border-x border-slate-800/80 px-5 pt-6 pb-12 flex flex-col justify-between">
+    <!-- Main Container -->
+    <main class="max-w-md mx-auto min-h-screen bg-brand-dark shadow-2xl relative flex flex-col justify-between border-x border-slate-800">
 
-        <div class="space-y-6">
-            
-            <!-- Profile / Brand Section -->
-            <div class="text-center">
-                <!-- Logo / Profile Image -->
-                <div class="w-24 h-24 mx-auto mb-3 rounded-full p-1 bg-gradient-to-tr from-yellow-500 to-amber-300 shadow-xl">
-                    <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18fcd07?auto=format&fit=crop&q=80&w=400" alt="Fine Line Drywall Logo" class="w-full h-full object-cover rounded-full">
-                </div>
-                
-                <h1 class="text-2xl font-black text-white tracking-tight">Fine Line Drywall</h1>
-                <p class="text-yellow-400 font-medium text-xs mt-1">Professional Installation, Taping & Mudding</p>
-                <p class="text-slate-400 text-xs mt-0.5"><i class="fa-solid fa-location-dot text-yellow-500 mr-1"></i> 4 Chippewa Rd, Petawawa, ON K8H 3K1</p>
-
-                <!-- Quick Action Buttons (Call / Text) -->
-                <div class="grid grid-cols-2 gap-3 mt-5">
-                    <a href="tel:2263783366" class="flex items-center justify-center gap-2 bg-yellow-500 hover:bg-yellow-400 text-slate-950 font-bold py-3 px-4 rounded-xl shadow-lg transition-transform active:scale-95 text-xs">
-                        <i class="fa-solid fa-phone-volume text-sm"></i> Call Now
-                    </a>
-                    <a href="sms:2263783366" class="flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3 px-4 rounded-xl border border-slate-700 transition-transform active:scale-95 text-xs">
-                        <i class="fa-solid fa-comment-sms text-yellow-400 text-sm"></i> Text Us
-                    </a>
-                </div>
+        <!-- Header / Profile Section -->
+        <div class="px-6 pt-8 pb-6 text-center relative">
+            <div class="relative w-28 h-28 mx-auto mb-4 rounded-full p-1 bg-gradient-to-tr from-brand-accent to-yellow-200 shadow-xl">
+                <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18fcd07?auto=format&fit=crop&q=80&w=400" alt="Fine Line Drywall Work" class="w-full h-full object-cover rounded-full">
             </div>
+            <h1 class="text-2xl font-black tracking-tight text-white">Fine Line Drywall</h1>
+            <p class="text-brand-accent font-medium text-sm mt-1">Professional Drywall Installation, Taping & Repairs</p>
+            <p class="text-slate-400 text-xs mt-1"><i class="fa-solid fa-location-dot text-brand-accent mr-1"></i> 4 Chippewa Rd, Petawawa, ON</p>
 
-            <!-- Trust Stats Bar -->
-            <div class="bg-cardBg p-3.5 rounded-2xl border border-slate-800 grid grid-cols-3 text-center divide-x divide-slate-800">
+            <!-- Quick Action Buttons -->
+            <div class="grid grid-cols-2 gap-3 mt-6">
+                <a href="tel:2263783366" class="flex items-center justify-center gap-2 bg-brand-accent hover:bg-brand-accentHover text-slate-950 font-bold py-3 px-4 rounded-xl shadow-lg transition-all transform active:scale-95 text-sm">
+                    <i class="fa-solid fa-phone-volume"></i> Call Now
+                </a>
+                <a href="sms:2263783366" class="flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3 px-4 rounded-xl border border-slate-700 transition-all transform active:scale-95 text-sm">
+                    <i class="fa-solid fa-comment-sms text-brand-accent"></i> Text Us
+                </a>
+            </div>
+        </div>
+
+        <!-- Middle Content Sections -->
+        <div class="px-6 space-y-6 flex-grow">
+
+            <!-- Trust Badges -->
+            <div class="bg-brand-card p-4 rounded-2xl border border-slate-800 grid grid-cols-3 text-center divide-x divide-slate-700">
                 <div>
-                    <p class="text-yellow-400 font-black text-base">5.0 ★</p>
-                    <p class="text-[10px] text-slate-400 uppercase tracking-wider mt-0.5">Top Rated</p>
+                    <p class="text-brand-accent font-black text-lg">5.0</p>
+                    <p class="text-[10px] text-slate-400 uppercase tracking-wider mt-0.5">Rating</p>
                 </div>
                 <div>
-                    <p class="text-white font-black text-base">100%</p>
+                    <p class="text-white font-black text-lg">100%</p>
                     <p class="text-[10px] text-slate-400 uppercase tracking-wider mt-0.5">Clean Finish</p>
                 </div>
                 <div>
-                    <p class="text-white font-black text-base">Free</p>
+                    <p class="text-white font-black text-lg">Free</p>
                     <p class="text-[10px] text-slate-400 uppercase tracking-wider mt-0.5">Estimates</p>
                 </div>
             </div>
 
-            <!-- Core Services List -->
+            <!-- Services Offered -->
             <div>
-                <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2.5 px-1"><i class="fa-solid fa-screwdriver-wrench text-yellow-500 mr-1.5"></i> Services Offered</h2>
-                <div class="space-y-2">
-                    <div class="bg-cardBg p-3 rounded-xl border border-slate-800 flex items-center justify-between text-xs font-medium">
-                        <span class="text-slate-200">Drywall Installation & Boarding</span>
-                        <i class="fa-solid fa-check text-yellow-500"></i>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3 px-1"><i class="fa-solid fa-screwdriver-wrench text-brand-accent mr-1.5"></i> Our Expert Services</h2>
+                <div class="space-y-2.5">
+                    <div class="bg-brand-card p-3.5 rounded-xl border border-slate-800 flex items-center justify-between">
+                        <span class="text-sm font-medium text-slate-200">Drywall Installation & Boarding</span>
+                        <i class="fa-solid fa-check text-brand-accent"></i>
                     </div>
-                    <div class="bg-cardBg p-3 rounded-xl border border-slate-800 flex items-center justify-between text-xs font-medium">
-                        <span class="text-slate-200">Expert Taping & Mudding</span>
-                        <i class="fa-solid fa-check text-yellow-500"></i>
+                    <div class="bg-brand-card p-3.5 rounded-xl border border-slate-800 flex items-center justify-between">
+                        <span class="text-sm font-medium text-slate-200">Expert Taping & Mudding</span>
+                        <i class="fa-solid fa-check text-brand-accent"></i>
                     </div>
-                    <div class="bg-cardBg p-3 rounded-xl border border-slate-800 flex items-center justify-between text-xs font-medium">
-                        <span class="text-slate-200">Ceiling Texturing & Repairs</span>
-                        <i class="fa-solid fa-check text-yellow-500"></i>
+                    <div class="bg-brand-card p-3.5 rounded-xl border border-slate-800 flex items-center justify-between">
+                        <span class="text-sm font-medium text-slate-200">Ceiling Texturing & Repairs</span>
+                        <i class="fa-solid fa-check text-brand-accent"></i>
                     </div>
-                    <div class="bg-cardBg p-3 rounded-xl border border-slate-800 flex items-center justify-between text-xs font-medium">
-                        <span class="text-slate-200">Water Damage & Hole Patching</span>
-                        <i class="fa-solid fa-check text-yellow-500"></i>
+                    <div class="bg-brand-card p-3.5 rounded-xl border border-slate-800 flex items-center justify-between">
+                        <span class="text-sm font-medium text-slate-200">Water Damage & Hole Patching</span>
+                        <i class="fa-solid fa-check text-brand-accent"></i>
                     </div>
                 </div>
             </div>
 
-            <!-- Photos & Facebook Reels Showcase Section -->
+            <!-- Project Photo & Facebook Reels Showcase -->
             <div>
-                <div class="flex items-center justify-between mb-2.5 px-1">
-                    <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400"><i class="fa-solid fa-clapperboard text-yellow-500 mr-1.5"></i> Work Photos & Reels</h2>
-                    <span class="text-[10px] text-yellow-500 font-semibold">Tap to watch/view</span>
+                <div class="flex items-center justify-between mb-3 px-1">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400"><i class="fa-solid fa-clapperboard text-brand-accent mr-1.5"></i> Recent Work & Reels</h2>
+                    <span class="text-[10px] text-brand-accent font-semibold">Tap to view</span>
                 </div>
-                <div class="grid grid-cols-2 gap-2.5">
-                    <!-- Photo / Project Link 1 -->
+                <div class="grid grid-cols-2 gap-3">
                     <a href="https://facebook.com" target="_blank" class="relative group rounded-xl overflow-hidden aspect-square bg-slate-800 border border-slate-800 block">
                         <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=400" alt="Basement Reno" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent flex items-end p-2 justify-between">
-                            <span class="text-[11px] font-medium text-white">Basement Reno</span>
-                            <i class="fa-brands fa-facebook text-yellow-400 text-xs"></i>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent flex items-end p-2.5 justify-between">
+                            <span class="text-xs font-medium text-white">Basement Finish</span>
+                            <i class="fa-brands fa-facebook text-brand-accent text-xs"></i>
                         </div>
                     </a>
-                    <!-- Facebook Reel Link 2 -->
                     <a href="https://facebook.com" target="_blank" class="relative group rounded-xl overflow-hidden aspect-square bg-slate-800 border border-slate-800 block">
-                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=400" alt="Taping Reel" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent flex items-end p-2 justify-between">
-                            <span class="text-[11px] font-medium text-white">Watch Reel ▶</span>
-                            <i class="fa-solid fa-play text-yellow-400 text-xs bg-black/50 p-1 rounded-full"></i>
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=400" alt="Smooth Taping Reel" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent flex items-end p-2.5 justify-between">
+                            <span class="text-xs font-medium text-white">Watch Reel ▶</span>
+                            <i class="fa-solid fa-play text-brand-accent text-xs bg-black/60 p-1 rounded-full"></i>
                         </div>
                     </a>
                 </div>
             </div>
 
-            <!-- Customer Reviews & Facebook Reviews Link -->
+            <!-- Reviews Section -->
             <div>
-                <div class="flex items-center justify-between mb-2.5 px-1">
-                    <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400"><i class="fa-solid fa-star text-yellow-500 mr-1.5"></i> Customer Reviews</h2>
-                    <a href="https://facebook.com" target="_blank" class="text-[10px] text-yellow-400 hover:underline font-semibold">View on FB →</a>
+                <div class="flex items-center justify-between mb-3 px-1">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400"><i class="fa-solid fa-star text-brand-accent mr-1.5"></i> Customer Reviews</h2>
+                    <a href="https://facebook.com" target="_blank" class="text-[10px] text-brand-accent hover:underline font-semibold">View on FB →</a>
                 </div>
-                <div class="bg-cardBg p-3.5 rounded-xl border border-slate-800 space-y-2">
-                    <div class="flex text-yellow-500 text-[10px] space-x-0.5">
+                <div class="bg-brand-card p-4 rounded-2xl border border-slate-800 space-y-3">
+                    <div class="flex text-brand-accent text-xs space-x-1">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="text-slate-300 text-xs italic">"Tyler did an incredible job boarding and taping our basement. Super clean lines and finished right on schedule!"</p>
-                    <p class="text-slate-400 text-[11px] font-semibold">— Dave M., Petawawa</p>
+                    <p class="text-slate-300 text-xs italic">"Tyler and his crew did an incredible job boarding and taping our basement reno. Incredibly clean lines and finished right on schedule. Highly recommend!"</p>
+                    <p class="text-slate-400 text-xs font-semibold">— Dave M., Petawawa</p>
                 </div>
             </div>
 
-            <!-- Quick Quote Request Form -->
-            <div class="bg-cardBg p-4 rounded-xl border border-slate-800">
-                <h3 class="font-bold text-white text-xs uppercase tracking-wider mb-1"><i class="fa-solid fa-paper-plane text-yellow-500 mr-1"></i> Request a Free Quote</h3>
-                <p class="text-slate-400 text-[11px] mb-3">Send Tyler the details of your project.</p>
-                <div class="space-y-2.5">
-                    <input type="text" placeholder="Your Name" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-yellow-500">
-                    <input type="tel" placeholder="Phone Number" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-yellow-500">
-                    <textarea rows="2" placeholder="Tell us about your project..." class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-yellow-500 resize-none"></textarea>
-                    <button class="w-full bg-yellow-500 hover:bg-yellow-400 text-slate-950 font-bold py-2.5 rounded-lg text-xs uppercase tracking-wider shadow-md transition-all">
-                        Send Request
+            <!-- Get a Free Quote Box / Form -->
+            <div class="bg-gradient-to-b from-brand-card to-slate-900 p-5 rounded-2xl border border-slate-800 text-center">
+                <h3 class="font-bold text-white text-base mb-1">Need a Drywall Quote?</h3>
+                <p class="text-slate-400 text-xs mb-4">Send Tyler the details of your project for a fast response.</p>
+                
+                <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-3 text-left">
+                    <div>
+                        <label class="block text-[11px] font-semibold text-slate-300 mb-1">Your Name</label>
+                        <input type="text" placeholder="John Doe" required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-brand-accent">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-semibold text-slate-300 mb-1">Phone Number</label>
+                        <input type="tel" placeholder="(226) 378-3366" required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-brand-accent">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-semibold text-slate-300 mb-1">Project Details</label>
+                        <textarea rows="3" placeholder="Room size, new install or repair..." class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-brand-accent resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand-accent hover:bg-brand-accentHover text-slate-950 font-bold py-3 rounded-xl transition-all text-xs uppercase tracking-wider shadow-lg">
+                        Submit Quote Request
                     </button>
-                </div>
+                </form>
             </div>
 
         </div>
 
         <!-- Footer -->
-        <div class="mt-8 text-center border-t border-slate-800/80 pt-4">
-            <p class="text-[11px] text-slate-500">© 2026 Fine Line Drywall. All rights reserved.</p>
-            <p class="text-[9px] text-slate-600 mt-0.5">Professional Mobile Link Hub</p>
+        <div class="mt-8 py-6 text-center border-t border-slate-800/80 px-6">
+            <p class="text-xs text-slate-500">© 2026 Fine Line Drywall. All rights reserved.</p>
+            <p class="text-[10px] text-slate-600 mt-1">Professional Mobile Link Hub</p>
         </div>
 
-    </div>
+        <!-- Sticky Mobile Bottom Call Bar -->
+        <div class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-slate-950/95 backdrop-blur-md border-t border-slate-800 p-3 px-6 flex items-center justify-between z-50 md:hidden">
+            <div>
+                <p class="text-xs font-bold text-white">Fine Line Drywall</p>
+                <p class="text-[10px] text-brand-accent">Petawawa, ON</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <a href="sms:2263783366" class="bg-slate-800 hover:bg-slate-700 text-white p-2.5 px-3.5 rounded-xl text-xs font-semibold border border-slate-700">
+                    <i class="fa-solid fa-comment-sms text-brand-accent mr-1"></i> Text
+                </a>
+                <a href="tel:2263783366" class="bg-brand-accent hover:bg-brand-accentHover text-slate-950 p-2.5 px-4 rounded-xl text-xs font-bold shadow-lg">
+                    <i class="fa-solid fa-phone mr-1"></i> Call Now
+                </a>
+            </div>
+        </div>
 
-    <!-- Sticky Bottom Call Bar for Mobile -->
-    <div class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-slate-950/95 backdrop-blur border-t border-slate-800 p-3 px-5 flex items-center justify-between z-50">
-        <div>
-            <p class="text-xs font-bold text-white">Fine Line Drywall</p>
-            <p class="text-[10px] text-yellow-500">Petawawa, ON</p>
-        </div>
-        <div class="flex items-center gap-2">
-            <a href="sms:2263783366" class="bg-slate-800 hover:bg-slate-700 text-white p-2.5 px-3 rounded-xl text-xs font-semibold border border-slate-700">
-                <i class="fa-solid fa-comment-sms text-yellow-400 mr-1"></i> Text
-            </a>
-            <a href="tel:2263783366" class="bg-yellow-500 hover:bg-yellow-400 text-slate-950 p-2.5 px-3.5 rounded-xl text-xs font-bold shadow-lg">
-                <i class="fa-solid fa-phone mr-1"></i> Call
-            </a>
-        </div>
-    </div>
+    </main>
 
 </body>
 </html>
