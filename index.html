@@ -16,155 +16,221 @@
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-600 selection:text-white min-h-screen flex flex-col justify-between">
 
-  <!-- Sticky Top Header -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 text-slate-900 shadow-sm">
-    <div class="max-w-xl mx-auto px-4 py-3 flex items-center justify-between gap-2">
+  <!-- Sticky Top Header & Navigation -->
+  <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white shadow-md">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo / Name -->
       <div class="flex items-center gap-2.5 min-w-0">
         <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center font-extrabold text-white text-sm shrink-0 shadow-md shadow-blue-500/20">
           FL
         </div>
         <div class="truncate">
-          <p class="font-bold text-sm leading-tight text-slate-900 truncate">Fine Line Drywall & Painting</p>
-          <p class="text-[11px] text-slate-500 truncate">Petawawa • Pembroke • Deep River</p>
+          <p class="font-bold text-sm leading-tight text-white truncate">Fine Line Drywall & Painting</p>
+          <p class="text-[11px] text-slate-400 truncate">Petawawa • Pembroke • Deep River</p>
         </div>
       </div>
-      <a href="tel:+12263783366" class="shrink-0 inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-500 active:scale-95 transition text-white text-xs font-bold px-3.5 py-2 rounded-full shadow-md shadow-blue-600/25">
+
+      <!-- Nav Links (Desktop) -->
+      <nav class="hidden md:flex items-center gap-6 text-xs font-semibold text-slate-300">
+        <a href="#services" class="hover:text-white transition">Services</a>
+        <a href="#before-after" class="hover:text-white transition">Before & After</a>
+        <a href="#reviews" class="hover:text-white transition">Reviews</a>
+        <a href="#faq" class="hover:text-white transition">FAQ</a>
+        <a href="#quote" class="hover:text-white transition">Contact</a>
+      </nav>
+
+      <!-- Top Call Button -->
+      <a href="tel:+12263783366" class="shrink-0 inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-500 active:scale-95 transition text-white text-xs font-bold px-4 py-2 rounded-full shadow-md shadow-blue-600/25">
         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
-        Call Now
+        (226) 378-3366
       </a>
     </div>
   </header>
 
-  <main class="max-w-xl mx-auto px-4 pb-16 w-full">
+  <main class="max-w-5xl mx-auto px-4 pb-16 w-full space-y-8 pt-6">
 
-    <!-- Hero Card (Clean Light Blue/Navy Professional Gradient) -->
-    <section class="pt-6 pb-5">
-      <div class="bg-gradient-to-br from-blue-900 via-slate-900 to-slate-900 text-white rounded-3xl p-6 shadow-xl border border-slate-800 relative overflow-hidden">
-        <div class="absolute -right-12 -top-12 w-44 h-44 bg-cyan-500/20 rounded-full blur-2xl pointer-events-none"></div>
-
-        <!-- Rating Badge -->
-        <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-3 py-1 text-xs font-semibold text-amber-300 mb-4 shadow-sm">
+    <!-- Hero Section (Split Layout inspired by professional contractor sites) -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+      
+      <!-- Left Column: Hero Text & Trust Badges -->
+      <div class="lg:col-span-7 space-y-5">
+        <div class="inline-flex items-center gap-2 bg-blue-100 border border-blue-200 rounded-full px-3.5 py-1 text-xs font-semibold text-blue-800">
           <span>★★★★★</span>
-          <span class="text-white">5.0 Rated on Google & Facebook</span>
+          <span>5.0 Rated Ottawa Valley Specialists</span>
         </div>
 
-        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight leading-tight text-white">
-          Flawless Drywall & Clean, Crisp Painting.
+        <h1 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight text-slate-900">
+          FLAWLESS <span class="text-blue-600">DRYWALL</span> IN THE OTTAWA VALLEY
         </h1>
-        <p class="mt-2.5 text-sm text-slate-200 leading-relaxed">
-          From full basement & garage boarding to dust-controlled sanding, smooth finishing, and interior/exterior painting—done on schedule across the Ottawa Valley.
+
+        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+          Expert drywall installation, taping, mudding, and interior painting for new builds, basements, and renovations. Straight lines, seamless seams, and paint-ready walls. Fast. Flawless. Quality first, always.
         </p>
 
-        <!-- Primary One-Tap Action Buttons -->
-        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <a href="tel:+12263783366" class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 active:scale-[0.99] transition text-white font-bold text-sm py-3.5 px-4 rounded-xl shadow-lg shadow-blue-600/30">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
-            Call (226) 378-3366
-          </a>
-          <a href="sms:+12263783366?&body=Hi%20Tyler%2C%20I%27d%20like%20to%20get%20a%20quote%20for%20a%20drywall%20%2F%20painting%20project." class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 active:scale-[0.99] transition text-white font-bold text-sm py-3.5 px-4 rounded-xl shadow-lg shadow-emerald-600/25">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
-            Text for Fast Quote
-          </a>
-        </div>
-
-        <!-- Quick Trust Bar -->
-        <div class="mt-5 pt-4 border-t border-white/15 grid grid-cols-3 gap-2 text-center text-xs">
-          <div>
-            <p class="font-bold text-white">Free Quotes</p>
-            <p class="text-slate-300 text-[11px]">Fast Turnaround</p>
+        <!-- Quick Trust Points -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+          <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+            <p class="text-lg font-black text-blue-600">100%</p>
+            <p class="text-[11px] text-slate-500 uppercase tracking-wide font-semibold">Clean Finish</p>
           </div>
-          <div class="border-x border-white/15">
-            <p class="font-bold text-white">Clean & Dust-Safe</p>
-            <p class="text-slate-300 text-[11px]">Vacuum Sanding</p>
+          <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+            <p class="text-lg font-black text-blue-600">5.0 ★</p>
+            <p class="text-[11px] text-slate-500 uppercase tracking-wide font-semibold">Google & FB</p>
           </div>
-          <div>
-            <p class="font-bold text-white">Local & Insured</p>
-            <p class="text-slate-300 text-[11px]">Petawawa, ON</p>
+          <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm col-span-2 sm:col-span-1">
+            <p class="text-lg font-black text-blue-600">Free</p>
+            <p class="text-[11px] text-slate-500 uppercase tracking-wide font-semibold">Estimates</p>
           </div>
         </div>
       </div>
+
+      <!-- Right Column: Inline Quote Box (Direct to SMS) -->
+      <div id="quote" class="lg:col-span-5 bg-slate-900 text-white rounded-3xl p-6 shadow-xl border border-slate-800">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="font-extrabold text-lg text-white">REQUEST A FREE QUOTE</h2>
+          <span class="text-[10px] bg-blue-600 text-white font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Fast Response</span>
+        </div>
+        <p class="text-xs text-slate-300 mb-4">Fill out your project details below to text Tyler directly.</p>
+
+        <form onsubmit="sendSMS(event)" class="space-y-3.5">
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1">Your Name *</label>
+            <input type="text" id="quoteName" placeholder="John Doe" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1">Phone Number *</label>
+            <input type="tel" id="quotePhone" placeholder="(613) 000-0000" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1">Project Details *</label>
+            <textarea id="quoteDetails" rows="3" placeholder="Drywall install, basement reno, painting..." required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500 resize-none"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 active:scale-[0.99] text-white font-bold text-xs py-3.5 px-4 rounded-xl shadow-lg shadow-blue-600/30 transition uppercase tracking-wider flex items-center justify-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+            Get Your Free Quote
+          </button>
+          <p class="text-[10px] text-slate-400 text-center">No obligation. Opens your text app to message Tyler.</p>
+        </form>
+      </div>
     </section>
 
-    <!-- All Links & Socials Hub -->
-    <section class="py-3">
-      <h2 class="text-xs font-bold uppercase tracking-wider text-slate-500 px-1 mb-2.5">Connect & See Recent Work</h2>
-      <div class="space-y-2.5">
-        <a href="https://www.facebook.com/profile.php?id=100083725940218" target="_blank" rel="noopener" class="flex items-center justify-between bg-white hover:bg-blue-50/60 border border-slate-200 rounded-2xl p-3.5 shadow-sm transition group">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-md shadow-blue-600/20">
-              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
-            </div>
-            <div>
-              <p class="font-bold text-sm text-slate-900">Facebook Page & Project Reels</p>
-              <p class="text-xs text-slate-500">Before & after drywall, garages & painting videos</p>
-            </div>
-          </div>
-          <span class="text-slate-400 group-hover:text-blue-600 transition font-bold text-sm">→</span>
-        </a>
+    <!-- Before & After Section -->
+    <section id="before-after" class="py-4">
+      <div class="text-center max-w-xl mx-auto mb-6">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-1">On Site Transformation</h2>
+        <h3 class="text-2xl font-black text-slate-900">BEFORE & AFTER</h3>
+        <p class="text-xs text-slate-600 mt-1">Watch the same space go from raw board and open joints to a taped, coated, paint-ready finish.</p>
+      </div>
 
-        <a href="mailto:fineline.drywall.painting@gmail.com?subject=Drywall%20%2F%20Painting%20Estimate%20Request" class="flex items-center justify-between bg-white hover:bg-slate-50 border border-slate-200 rounded-2xl p-3.5 shadow-sm transition group">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center shrink-0 shadow">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
-            </div>
-            <div class="min-w-0">
-              <p class="font-bold text-sm text-slate-900">Email Project Plans or Photos</p>
-              <p class="text-xs text-slate-500 truncate">fineline.drywall.painting@gmail.com</p>
-            </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-white border border-slate-200 rounded-3xl p-4 shadow-sm relative overflow-hidden group">
+          <div class="absolute top-4 left-4 bg-slate-900/80 backdrop-blur text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Before</div>
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600" alt="Before drywall taping" class="w-full h-56 object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+          <div class="mt-3">
+            <p class="font-bold text-sm text-slate-900">Raw Board & Open Joints</p>
+            <p class="text-xs text-slate-500">Freshly installed drywall ready for professional mud and tape.</p>
           </div>
-          <span class="text-slate-400 group-hover:text-slate-900 transition font-bold text-sm">→</span>
-        </a>
+        </div>
 
-        <a href="https://maps.google.com/?q=Fine+Line+Drywall+inc+4+Chippewa+Rd+Petawawa+ON" target="_blank" rel="noopener" class="flex items-center justify-between bg-white hover:bg-amber-50/50 border border-slate-200 rounded-2xl p-3.5 shadow-sm transition group">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 shadow-md shadow-amber-500/20">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
-            </div>
-            <div>
-              <p class="font-bold text-sm text-slate-900">Google Business Profile & Reviews</p>
-              <p class="text-xs text-slate-500">5.0 ★★★★★ • Petawawa, ON</p>
-            </div>
+        <div class="bg-white border border-slate-200 rounded-3xl p-4 shadow-sm relative overflow-hidden group">
+          <div class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow">After</div>
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" alt="After drywall finish" class="w-full h-56 object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+          <div class="mt-3">
+            <p class="font-bold text-sm text-slate-900">Paint-Ready Smooth Finish</p>
+            <p class="text-xs text-slate-500">Seamless walls and corners sanded clean with dust-controlled vacuum systems.</p>
           </div>
-          <span class="text-slate-400 group-hover:text-amber-600 transition font-bold text-sm">→</span>
-        </a>
+        </div>
       </div>
     </section>
 
     <!-- Services Section -->
-    <section class="py-4">
-      <h2 class="text-xs font-bold uppercase tracking-wider text-slate-500 px-1 mb-2.5">What We Do</h2>
-      <div class="grid grid-cols-2 gap-2.5">
-        <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition">
-          <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-sm mb-2.5">01</div>
-          <h3 class="font-bold text-sm text-slate-900">Drywall Installation</h3>
-          <p class="text-xs text-slate-600 mt-1 leading-relaxed">New builds, basements, garages, additions & ceiling boarding.</p>
+    <section id="services" class="py-4">
+      <div class="text-center max-w-xl mx-auto mb-6">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-1">Our Expertise</h2>
+        <h3 class="text-2xl font-black text-slate-900">OUR SERVICES</h3>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-black text-sm mb-3">01</div>
+          <h4 class="font-bold text-sm text-slate-900">Drywall Installation</h4>
+          <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">New builds, basements, garages, additions & ceiling boarding executed with precision.</p>
         </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition">
-          <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-sm mb-2.5">02</div>
-          <h3 class="font-bold text-sm text-slate-900">Taping & Finishing</h3>
-          <p class="text-xs text-slate-600 mt-1 leading-relaxed">Seamless mudding, corner beads & dust-controlled vacuum sanding.</p>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-black text-sm mb-3">02</div>
+          <h4 class="font-bold text-sm text-slate-900">Taping & Finishing</h4>
+          <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Precise taping, mudding, corner beads, and dust-controlled vacuum sanding for flawless walls.</p>
         </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition">
-          <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-sm mb-2.5">03</div>
-          <h3 class="font-bold text-sm text-slate-900">Interior & Exterior Paint</h3>
-          <p class="text-xs text-slate-600 mt-1 leading-relaxed">Sharp cut lines, ceilings, trim, walls & full home refreshes.</p>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-black text-sm mb-3">03</div>
+          <h4 class="font-bold text-sm text-slate-900">Interior & Exterior Paint</h4>
+          <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Sharp cut lines, ceilings, trim, walls & full home refreshes with premium paints.</p>
         </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition">
-          <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-sm mb-2.5">04</div>
-          <h3 class="font-bold text-sm text-slate-900">Patches & Repairs</h3>
-          <p class="text-xs text-slate-600 mt-1 leading-relaxed">Water damage, holes, cracks & texture matching made invisible.</p>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-black text-sm mb-3">04</div>
+          <h4 class="font-bold text-sm text-slate-900">Patches & Repairs</h4>
+          <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Water damage, holes, cracks & texture matching made completely invisible.</p>
         </div>
       </div>
     </section>
 
-    <!-- Verified 5-Star Customer Reviews -->
+    <!-- Connect & Socials Hub -->
     <section class="py-4">
-      <div class="flex items-center justify-between px-1 mb-2.5">
-        <h2 class="text-xs font-bold uppercase tracking-wider text-slate-500">5-Star Local Reviews</h2>
+      <h2 class="text-xs font-bold uppercase tracking-wider text-slate-500 px-1 mb-2.5">Connect & Portfolio</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <a href="https://www.facebook.com/profile.php?id=100083725940218" target="_blank" rel="noopener" class="flex items-center justify-between bg-white hover:bg-blue-50/60 border border-slate-200 rounded-2xl p-4 shadow-sm transition group">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-sm text-slate-900">Facebook Reels & Work</p>
+              <p class="text-xs text-slate-500">Watch video reels</p>
+            </div>
+          </div>
+          <span class="text-slate-400 group-hover:text-blue-600 transition font-bold">→</span>
+        </a>
+
+        <a href="mailto:fineline.drywall.painting@gmail.com" class="flex items-center justify-between bg-white hover:bg-slate-50 border border-slate-200 rounded-2xl p-4 shadow-sm transition group">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+            </div>
+            <div class="min-w-0">
+              <p class="font-bold text-sm text-slate-900">Email Blueprints / Photos</p>
+              <p class="text-xs text-slate-500 truncate">fineline.drywall.painting@gmail.com</p>
+            </div>
+          </div>
+          <span class="text-slate-400 group-hover:text-slate-900 transition font-bold">→</span>
+        </a>
+
+        <a href="https://maps.google.com/?q=Fine+Line+Drywall+inc+4+Chippewa+Rd+Petawawa+ON" target="_blank" rel="noopener" class="flex items-center justify-between bg-white hover:bg-amber-50/50 border border-slate-200 rounded-2xl p-4 shadow-sm transition group">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-sm text-slate-900">Google Business Profile</p>
+              <p class="text-xs text-slate-500">5.0 ★★★★★ • Petawawa, ON</p>
+            </div>
+          </div>
+          <span class="text-slate-400 group-hover:text-amber-600 transition font-bold">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Verified 5-Star Customer Reviews -->
+    <section id="reviews" class="py-4">
+      <div class="flex items-center justify-between px-1 mb-3">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-slate-500">Trusted Across The Ottawa Valley</h2>
         <span class="text-xs font-bold text-amber-600">5.0 ★★★★★</span>
       </div>
 
-      <div class="space-y-3">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm">
           <div class="flex items-center justify-between mb-1.5">
             <p class="font-bold text-sm text-slate-900">Glenn J Connolly</p>
@@ -187,121 +253,88 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm">
-            <div class="flex items-center justify-between mb-1">
-              <p class="font-bold text-sm text-slate-900">Phil Olsen</p>
-              <span class="text-[11px] font-semibold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full">Google</span>
-            </div>
-            <p class="text-amber-500 text-xs mb-1.5">★★★★★</p>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              “Hired Tyler for a quick drywall job, he was prompt and did great work!”
-            </p>
+        <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm">
+          <div class="flex items-center justify-between mb-1">
+            <p class="font-bold text-sm text-slate-900">Phil Olsen</p>
+            <span class="text-[11px] font-semibold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full">Google</span>
           </div>
+          <p class="text-amber-500 text-xs mb-1.5">★★★★★</p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            “Hired Tyler for a quick drywall job, he was prompt and did great work!”
+          </p>
+        </div>
 
-          <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm">
-            <div class="flex items-center justify-between mb-1">
-              <p class="font-bold text-sm text-slate-900">Candice Viveiros</p>
-              <span class="text-[11px] font-semibold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full">Google</span>
-            </div>
-            <p class="text-amber-500 text-xs mb-1.5">★★★★★</p>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              “Very happy with our paint job, would highly recommend!”
-            </p>
+        <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm">
+          <div class="flex items-center justify-between mb-1">
+            <p class="font-bold text-sm text-slate-900">Candice Viveiros</p>
+            <span class="text-[11px] font-semibold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full">Google</span>
           </div>
+          <p class="text-amber-500 text-xs mb-1.5">★★★★★</p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            “Very happy with our paint job, would highly recommend!”
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Collapsible FAQ Accordion -->
-    <section class="py-4">
-      <h2 class="text-xs font-bold uppercase tracking-wider text-slate-500 px-1 mb-2.5">Common Questions</h2>
+    <section id="faq" class="py-4">
+      <h2 class="text-xs font-bold uppercase tracking-wider text-slate-500 px-1 mb-2.5">Frequently Asked Questions</h2>
       <div class="space-y-2">
         <details class="group bg-white border border-slate-200 rounded-2xl px-4 py-3.5 shadow-sm">
           <summary class="flex items-center justify-between cursor-pointer font-bold text-sm text-slate-900">
-            <span>Which areas do you serve?</span>
+            <span>What drywall services do you offer?</span>
             <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
           </summary>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">
-            We are based in Petawawa and serve homeowners and builders across Petawawa, Pembroke, Deep River, and surrounding Ottawa Valley communities.
+            We handle full drywall installation, boarding, taping, mudding, vacuum sanding, ceiling textures, water damage repairs, and interior/exterior painting.
           </p>
         </details>
 
         <details class="group bg-white border border-slate-200 rounded-2xl px-4 py-3.5 shadow-sm">
           <summary class="flex items-center justify-between cursor-pointer font-bold text-sm text-slate-900">
-            <span>Do you take small drywall repair or single-room paint jobs?</span>
+            <span>Do you work on new builds and renovations?</span>
             <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
           </summary>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">
-            Yes! Whether you need a single patch repaired, a garage drywalled, or a whole house taped and painted, reach out for a free quote.
+            Yes! From custom home new builds and basement finishing to single-room patches and garage renovations—we do it all.
           </p>
         </details>
 
         <details class="group bg-white border border-slate-200 rounded-2xl px-4 py-3.5 shadow-sm">
           <summary class="flex items-center justify-between cursor-pointer font-bold text-sm text-slate-900">
-            <span>How fast can I get an estimate?</span>
+            <span>Is the finish ready to paint?</span>
             <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
           </summary>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">
-            Text or call (226) 378-3366 anytime. You can even text a few photos and approximate room sizes for a quick ballpark quote.
+            Absolutely. Every seam, screw, and corner is worked until invisible, leaving a smooth, flawless, paint-ready surface.
           </p>
         </details>
-      </div>
-    </section>
 
-    <!-- Interactive SMS Quote Request Form Section -->
-    <section class="py-4">
-      <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-md">
-        <h2 class="font-extrabold text-lg text-slate-900 mb-1">Request a Free Quote</h2>
-        <p class="text-xs text-slate-500 mb-4">Fill out your project details below to text Tyler directly.</p>
-        
-        <form onsubmit="sendSMS(event)" class="space-y-3.5">
-          <div>
-            <label class="block text-xs font-bold text-slate-700 mb-1">Your Name</label>
-            <input type="text" id="quoteName" placeholder="John Doe" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 focus:outline-none focus:border-blue-600">
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-slate-700 mb-1">Phone Number</label>
-            <input type="tel" id="quotePhone" placeholder="(613) 000-0000" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 focus:outline-none focus:border-blue-600">
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-slate-700 mb-1">Project Details</label>
-            <textarea id="quoteDetails" rows="3" placeholder="Drywall install, basement reno, painting..." required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 focus:outline-none focus:border-blue-600 resize-none"></textarea>
-          </div>
-          <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm py-3.5 px-4 rounded-xl shadow-md shadow-emerald-600/25 transition flex items-center justify-center gap-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
-            Text Details to Tyler
-          </button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Bottom Quick Contact Card -->
-    <section class="pt-2">
-      <div class="bg-slate-900 text-white rounded-3xl p-5 shadow-lg text-center">
-        <h2 class="font-extrabold text-lg text-white">Prefer to Call or Text Directly?</h2>
-        <p class="text-xs text-slate-300 mt-1">
-          4 Chippewa Rd, Petawawa, ON • Open Mon–Fri till 5:00 PM
-        </p>
-        <div class="mt-4 flex flex-col sm:flex-row gap-2.5">
-          <a href="tel:+12263783366" class="flex-1 bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm py-3 px-4 rounded-xl transition shadow">
-            Call (226) 378-3366
-          </a>
-          <a href="sms:+12263783366?&body=Hi%20Tyler%2C%20I%27d%20like%20a%20free%20quote%20for%20my%20home." class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm py-3 px-4 rounded-xl transition shadow">
-            Send a Text
-          </a>
-        </div>
+        <details class="group bg-white border border-slate-200 rounded-2xl px-4 py-3.5 shadow-sm">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-sm text-slate-900">
+            <span>What areas do you serve?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+            We are based in Petawawa and proudly serve homeowners and general contractors across Petawawa, Pembroke, Deep River, and surrounding Ottawa Valley towns.
+          </p>
+        </details>
       </div>
     </section>
 
   </main>
 
-  <footer class="border-t border-slate-200 bg-white py-6 px-4 text-center text-xs text-slate-500">
-    <p class="font-semibold text-slate-800">Fine Line Drywall Inc. • Tyler Waldren</p>
-    <p class="mt-1">Petawawa, Pembroke & Deep River, Ontario</p>
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white py-8 px-4 text-center text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto space-y-2">
+      <p class="font-bold text-slate-900 text-sm">Fine Line Drywall Inc. • Tyler Waldren</p>
+      <p>4 Chippewa Rd, Petawawa, ON K8H 3K1 • Call or Text: (226) 378-3366</p>
+      <p class="text-[11px] text-slate-400 mt-2">© 2026 Fine Line Drywall & Painting. All rights reserved.</p>
+    </div>
   </footer>
 
-  <!-- JavaScript to format and trigger text message -->
+  <!-- JavaScript to format and trigger direct text message -->
   <script>
     function sendSMS(e) {
       e.preventDefault();
